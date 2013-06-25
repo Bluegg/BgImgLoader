@@ -7,10 +7,12 @@ Options
 ---
 
 srcAttr: The data attribute containing the URL of the image to load. (default: "data-bg-src)
+
 callback: Function to call when the image has loaded and been applied to the 'background-image' CSS attribute of the element.
 
 Usage
 ---
+```javascript
 
 $(".element").bgImgLoad({
   srcAttr: "data-img-url",
@@ -18,3 +20,5 @@ $(".element").bgImgLoad({
     $(this).addClass("loaded");
   }
 });
+
+```
